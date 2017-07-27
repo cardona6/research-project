@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first Node.js blog!</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700' rel='stylesheet' type='text/css'>
+    <link href="./main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="main-logo" src="https://thumb1.shutterstock.com/display_pic_with_logo/822469/104783210/stock-photo-digital-binary-data-protected-by-the-security-system-104783210.jpg">
+        <h1 class="title">Security: (https, same origin, cookies, xss etc..</h1>
+    </header>
+    <main>
+        <div class="entry-container">
+            <!--PASTE YOUR CODE HERE!! -->
+            <h3>Create a blog post</h3>
+            <form action="/create-post" method="POST">
+                <textarea name="blogpost" rows="10" cols="14"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <br/>
+        <hr/>
+        <br/>
+
+        <h2>Recent Posts</h2>
+
+        <div class="post-container"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
