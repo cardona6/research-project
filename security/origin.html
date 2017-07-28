@@ -49,24 +49,15 @@
             both web pages have the same origin. An origin is defined as a combination of URI scheme, hostname, and port
             number. This policy prevents a malicious script on one page from obtaining access to sensitive data on another
             web page through that page's Document Object Model. .
-
         </p>
 
         <h3>why is same origin Important?</h3>
         <hr>
-        <p> Assume you are logged into Facebook and visit a malicious website in another browser tab. Without the same origin
-            policy JavaScript on that website could do anything to your Facebook account that you are allowed to do. For
-            example read private messages, post status updates, analyse the HTML DOM-tree after you entered your password
-            before submitting the form. But of course Facebook wants to use JavaScript to enhance the user experience. So
-            it is important that the browser can detect that this JavaScript is trusted to access Facebook resources. That's
-            where the same origin policy comes into play: If the JavaScript is included from a HTML page on facebook.com,
-            it may access facebook.com resources..</p>
+        <p> The same-origin policy is a key mechanism implemented within browsers that is designed to keep content that came
+            from different origins from interfering with each other. Basically, content received from one website is allowed
+            to read and modify other content received from the same site but is not allowed to access content received from
+            other sites.</p>
 
-        <h3>How Does same origin Work?</h3>
-        <hr>
-        <p>I had a read of what same origin policy means on Wikipedia however fail to understand how it works. I do understand
-            that it prevents for example a javascript on my website from interacting with a script on a separate site however
-            what does this exactly mean?.</p>
 
         <h4>References</h4>
         <ul>
