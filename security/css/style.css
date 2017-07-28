@@ -1,8 +1,8 @@
 body {
-    background-image: url("https://www.adslzone.net/app/uploads/2016/10/Cookies-715x374.jpg");
-    background-size: contain;
+    background-image: url("http://www.datamanager.it/wp-content/uploads/2015/05/cookies_Keyboard.jpg");
+    /* background-size: contain; */
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center center;
     color: white;
     background-attachment:fixed
 }
@@ -13,8 +13,13 @@ body {
     background: rgba(0,0,0, 0.65);
 }
 .title{
+    text-align: left;
+}
+.textBody{
+    text-align: justify;
+}
+
+.quote{
     text-align: center;
 }
-.samme{
-    text-align: center;
-}
+
