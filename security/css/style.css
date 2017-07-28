@@ -1,0 +1,20 @@
+body {
+    background-image: url("https://www.adslzone.net/app/uploads/2016/10/Cookies-715x374.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: white;
+    background-attachment:fixed
+}
+
+.mainContainer {
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(0,0,0, 0.65);
+}
+.title{
+    text-align: center;
+}
+.samme{
+    text-align: center;
+}
