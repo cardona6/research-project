@@ -69,16 +69,40 @@
             (Transport Layer Security). Both the TLS and SSL protocols use what is known as an 'asymmetric' Public Key Infrastructure
             (PKI) system. An asymmetric system uses two 'keys' to encrypt communications, a 'public' key and a 'private'.
             </p>
-
         <h4>References</h4>
         <ul>
             <li><a href="https://en.wikipedia.org/wiki/HTTPS">https://en.wikipedia.org/wiki/HTTPS</a></li>
             <li><a href="http://www.nextadvisor.com/blog/2016/02/17/what-is-https/">http://www.nextadvisor.com/blog/2016/02/17/what-is-https/</a></li>
             <li><a href="https://www.youtube.com/watch?v=JCvPnwpWVUQ">https://www.youtube.com/watch?v=JCvPnwpWVUQ</a></li>
+
         </ul>
         <br/>
         <hr/>
         <br/>
+        <h2> XSS </h2>
+        <h3>What is a XSS ?</h3>
+        <p>Cross-site scripting (XSS) is a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy.</p>
+          
+        <h3>How the malicious JavaScript is injected
+</h3>The only way for the attacker to run his malicious JavaScript in the victim's browser is to inject it into one of the pages that the victim downloads from the website. This can happen if the website directly includes user input in its pages, because the attacker can then insert a string that will be treated as code by the victim's browser.
+
+In the example below, a simple server-side script is used to display the latest comment on a website:print "<html>"
+print "Latest comment:"
+print database.latestComment
+print "</html>"
+              <h3>A typical example of how XSS works</h3>
+               <p> 1-  The attacker injects a payload in the website’s database by submitting a vulnerable form with some malicious JavaScript
+<br>2-The victim requests <br>3-the web page from the website
+The website serves <br>4-the victim’s browser the page with the attacker’s payload as part of the HTML body.
+The victim’s browser will execute the malicious script inside the HTML body. In this case it would send the victim’s cookie to the attacker’s server. The attacker now simply needs to extract the victim’s cookie when the HTTP request arrives to the server, after which the attacker can use the victim’s stolen cookie for impersonation.
+</p>
+        <h4>References</h4>
+        <ul>
+        <li><a href="https://www.acunetix.com/websitesecurity/cross-site-scripting/">https://www.acunetix.com/websitesecurity/cross-site-scripting/</a>
+        <li><a href="https://en.wikipedia.org/wiki/Cross-site_scripting">https://en.wikipedia.org/wiki/Cross-site_scripting</a></li>
+        </ul>
+    
+            
 
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
